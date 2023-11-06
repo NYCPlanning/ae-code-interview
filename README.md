@@ -80,13 +80,13 @@ The API exists to manage and serve data for the frontend. It is initiated with d
 These data are accessible to the frontend primarily through two endpoints described in the acceptance criteria described below. The API must communicate with the Frontend through HTTP requests. However, it may be implemented with the language of your choosing. Like the frontend, you are encouraged to use open source frameworks and tools.
 
 ### Acceptance criteria
-    - [ ] Contains two endpoints
-      - [ ] The first endpoint returns the geojson for the deliveries
-      - [ ] The second endpoint allows updates to "note" and/or "delivered" properties
-        - [ ] This endpoint has an `id` parameter which specifies which delivery will be updated
-        - [ ] This endpoint accepts a request body with data to update the "note", "delivered", or both values.
-        - [ ] If the request body does not contain data to update a property, that property is left unchanged.
-          - For example, providing data for only "notes" will update the "notes" but leave "delivered" unchanged.
-        - While the initial data are provided in a file, the updates do not need to be preserved in the file. It's okay if the updates do not persist when stopping the application.
-        - [ ] This endpoint returns a `404` response when no delivery is found for the provided `id`
+- [ ] Contains two endpoints
+    - [ ] The first endpoint returns the geojson for the deliveries
+    - [ ] The second endpoint allows updates to "note" and/or "delivered" properties
+    - [ ] This endpoint has an `id` parameter which specifies which delivery will be updated
+    - [ ] This endpoint accepts a request body with data to update the "note", "delivered", or both values.
+    - [ ] If the request body does not contain data to update a property, that property is left unchanged.
+        - For example, providing data for only "notes" will update the "notes" but leave "delivered" unchanged.
+    - While the initial data are provided in a file, the updates do not need to be preserved in the file. It's okay if the updates do not persist when stopping the application.
+    - [ ] This endpoint returns a `404` response when no delivery is found for the provided `id`
      
