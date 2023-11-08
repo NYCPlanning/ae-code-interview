@@ -78,21 +78,22 @@ From a technical perspective, it must run in a web browser. Correspondingly, it 
 The API exists to manage and serve data for the frontend. It is initiated with data from the provided GeoJSON file. The 5 deliveries within the file consist of primarily two parts.
  - a geometry containing the destination coordinates for the delivery
  - a “properties” object containing data about that delivery including:
-   - an ID
-   - the recipient’s name
-   - notes
-   - a boolean “delivered” flag that indicates if a given delivery has been completed. 
+   - id - a unique ID
+   - name - the recipient’s name
+   - notes - relevant details about the delivery
+   - delivered - a boolean flag that indicates whether a given delivery has been completed. 
 
-These data are accessible to the frontend primarily through two endpoints described in the acceptance criteria described below. The API must communicate with the Frontend through HTTP requests. However, it may be implemented with the language of your choosing. Like the frontend, you are encouraged to use open source frameworks and tools.
+**Note:** *While the initial data are provided in a file, it is not necessary to read and write data to/from the file. The data may be managed purely in application memory. In fact, you can directly copy and paste the data into a variable.*
+
+These data are accessible to the frontend primarily through two endpoints described in the acceptance criteria below. The API must communicate with the Frontend through RESTful HTTP requests. However, it may be implemented with the language of your choosing. Like the frontend, you are encouraged to use open source frameworks and tools.
 
 ### Acceptance criteria
 - [ ] Contains two endpoints
     - [ ] The first endpoint returns the geojson for the deliveries
-    - [ ] The second endpoint allows updates to "note" and/or "delivered" properties
-    - [ ] This endpoint has an `id` parameter which specifies which delivery will be updated
-    - [ ] This endpoint accepts a request body with data to update the "note", "delivered", or both values.
-    - [ ] If the request body does not contain data to update a property, that property is left unchanged.
-        - For example, providing data for only "notes" will update the "notes" but leave "delivered" unchanged.
-    - While the initial data are provided in a file, the updates do not need to be preserved in the file. It's okay if the updates do not persist when stopping the application.
-    - [ ] This endpoint returns a `404` response when no delivery is found for the provided `id`
+    - [ ] The second endpoint allows updates to "notes" and/or "delivered" properties
+      - [ ] it has an `id` parameter which specifies which delivery will be updated
+      - [ ] it accepts a request body with data to update the "notes", "delivered", or both values.
+        - [ ] If the request body does not contain data to update a property, that property is left unchanged.
+          - For example, providing data for only "notes" will update the "notes" but leave "delivered" unchanged.
+      - [ ] it returns a `404` response when no delivery is found for the provided `id`
      
