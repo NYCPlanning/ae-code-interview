@@ -3,13 +3,15 @@
 
 Welcome to the Application Engineering code interview!
 
-To start this challenge, create a new **private** repo under your github username. We would like you to include all the code and documentation inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@tangoyankee` (Timothy Miller) and `@TylerMatteo`
+To start this challenge, create a new **private** repo under your github username.We would like you to include all the code and documentation inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@tangoyankee` (Timothy Miller) and `@TylerMatteo`.  
 To share a private repository:
   - Select the `Settings` tab on the repository
   - Select the `Collaborators and teams` menu item
   - Choose `Add people` within the `Manage access` section
 
-> ⚠️ Note: **the repo has to be `<ins>`private`</ins>`, otherwise you will be automatically `<ins>`disqualified`</ins>`**. Also we will check your commit history to only account for the first 48 hours of coding activities.
+We will check your **commit history** to only account for the first **48 hours** of coding activities.
+
+> ⚠️ Note: **the repo has to be `<em>`*private*`</em>`, otherwise you will be automatically `<em>`*disqualified*`</em>`**.
 
 ## What we are looking for
 
@@ -30,11 +32,11 @@ Your code interview will be evaluated based on your repo, so make sure all files
   - A comprehensive `README.md` on anything that we should know about this repo.
   - Clear instructions on commands to run code and what to expect.
   - Clear documentation for functions/processes in code.
-- **Error Handling**
-  - Considerations for how the features might break
-  - Implementations to prevent error states
-  - Implementations to recover from error states
-- **RESTfulness**
+- **Robustness**:
+  - Typing consistency *ex) strings treated consistently as strings*
+  - Considerations for errors states- preventing and recovering from them
+  - Meaningful tests
+- **RESTfulness**:
   - API endpoints follow RESTful design
   - Response codes align with HTTP definitions 
 
@@ -44,7 +46,7 @@ Your service should contain two applications:
     1) a REST API for reading and updating deliveries
     2) a front-end web application that uses that API to show delivery drivers the data and allows them to update it.
 
-The acceptance criteria below specify the necessary features for the application. However, they are not exhaustive of all possible scenarios. Please add any additional code or document strategies on how to make the applications more robust.
+The acceptance criteria below specify the expected features for the application. However, they are not exhaustive of all possible scenarios. Please add any additional code to make the applications more robust. If implementing your idea is not feasible within the allotted time, you may also document your thoughts with comments, readme notes, or some other method.
 
 ## Front End
 The frontend can be considered the primary user interface for delivery drivers. It consists primarily of a map and a separate list of deliveries. The acceptance criteria below outline the specifically expected functionality. The exact layout and styling is at your discretion. With that in mind, please feel free to keep the visual design and layout of your front-end as simple as you would like. We encourage you to build toward “minimum viable product” for styling and then return to improving them and using your creativity if you have time. 
