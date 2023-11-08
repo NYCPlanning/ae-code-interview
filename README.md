@@ -43,34 +43,34 @@ Your code interview will be evaluated based on your repo, so make sure all files
 ## Introduction
 You have been tasked with building a simple full stack service for delivery drivers to use while completing deliveries. You have been given a file of GeoJSON containing a FeatureCollection with 5 Point Features. Each Feature represents a delivery in New York City that the delivery driver must complete using your service.
 Your service should contain two applications:
-    1) a REST API for reading and updating deliveries
-    2) a front-end web application that uses that API to show delivery drivers the data and allows them to update it.
+  1) a REST API for reading and updating deliveries
+  2) a front-end web application which uses that API to show delivery drivers the data and allows them to update it.
 
 The acceptance criteria below specify the expected features for the application. However, they are not exhaustive of all possible scenarios. Please add any additional code to make the applications more robust. If implementing your idea is not feasible within the allotted time, you may also document your thoughts with comments, readme notes, or some other method.
 
 ## Front End
 The frontend can be considered the primary user interface for delivery drivers. It consists primarily of a map and a separate list of deliveries. The acceptance criteria below outline the specifically expected functionality. The exact layout and styling is at your discretion. With that in mind, please feel free to keep the visual design and layout of your front-end as simple as you would like. We encourage you to build toward “minimum viable product” for styling and then return to improving them and using your creativity if you have time. 
 
-*This wireframe may serve as inspiration for displaying the list of deliveries. **Matching this wireframe is not required.***
+*This wireframe may serve as inspiration for displaying the list of deliveries. **Matching this wireframe is not required.***  
 ![delivery-list-wireframe](./delivery-list.png)
 
-From a technical perspective, it must run in a web browser. Correspondingly, it must either be directly written in HTML, CSS, and Javascript or written with tool that transpile to them. Please use any open source tools and/or frameworks that will improve the application or make it easier to develop.
+From a technical perspective, it must run in a web browser. Correspondingly, it must either be directly written in HTML, CSS, and Javascript or written with tools that transpile to them. Please use any open source tools and/or frameworks that will improve the application or make it easier to develop. [Leaflet](https://leafletjs.com/), [Mapbox](https://docs.mapbox.com/mapbox-gl-js/guides/), and [MapLibre](https://maplibre.org/) are popular mapping options. But if you would prefer to use a different open source tool, that is also fine.
 
 ### Acceptance Criteria
 - [ ] There is a map of New York City
   - [ ] The deliveries are displayed as points on the map
     - [ ] Hovering on a delivery point opens a tooltip
-    - [ ] The tooltip displays the recipient name and notes
+    - [ ] The tooltip displays the "notes" and recipient "name" 
   - [ ] Clicking on the map in an area without a delivery will place a point on the map
     - [ ] Clicking to a new location on the map moves the point to that new location
     - [ ] The coordinates of this point are used in later-described distance calculations
 - [ ] A list of deliveries (separate from the map) is displayed with the following characteristics
   - [ ] 'Delivered' packages are excluded from the list
     - Only deliveries that still need to be delivered are shown
-  - [ ] Each delivery item displays details about its recipient name and notes
+  - [ ] Each delivery item displays details about its "notes" and recipient "name" 
     - [ ] If a user has chosen a point on the map (as described above), the distance from that point for each delivery is calculated and displayed.
   - [ ] If the user placed a point on the map (as described above), the deliveries are sorted based on distance to the point; the closest delivery is listed first
-  - [ ] From this list, users can update the notes and delivered properties of each delivery
+  - [ ] From this list, users can update the "notes" and "delivered" properties of each delivery
     - [ ] After a delivery is delivered, it is hidden from the list
 
 
