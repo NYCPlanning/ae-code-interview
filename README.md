@@ -4,6 +4,10 @@
 Welcome to the Application Engineering code interview!
 
 To start this challenge, create a new **private** repo under your github username. We would like you to include all the code and documentation inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@tangoyankee` (Timothy Miller) and `@TylerMatteo`
+To share a private repository:
+  - Select the `Settings` tab on the repository
+  - Select the `Collaborators and teams` menu item
+  - Choose `Add people` within the `Manage access` section
 
 > ⚠️ Note: **the repo has to be `<ins>`private`</ins>`, otherwise you will be automatically `<ins>`disqualified`</ins>`**. Also we will check your commit history to only account for the first 48 hours of coding activities.
 
