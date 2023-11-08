@@ -3,9 +3,9 @@
 
 Welcome to the Application Engineering code interview!
 
-To start this challenge, create a new **private** repo under your github username. We would like you to include all the code and documentation inside of the repo. You will have **6 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@tangoyankee` (Timothy Miller) and `@TylerMatteo`
+To start this challenge, create a new **private** repo under your github username. We would like you to include all the code and documentation inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@tangoyankee` (Timothy Miller) and `@TylerMatteo`
 
-> ⚠️ Note: **the repo has to be `<ins>`private`</ins>`, otherwise you will be automatically `<ins>`disqualified`</ins>`**. Also we will check your commit history to only account for the first 6 hours of coding activities.
+> ⚠️ Note: **the repo has to be `<ins>`private`</ins>`, otherwise you will be automatically `<ins>`disqualified`</ins>`**. Also we will check your commit history to only account for the first 48 hours of coding activities.
 
 ## What we are looking for
 
